@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom is good</title>
+        <style>
+            .alert{
+                color:aqua;
+                background:green;
+                padding: 5px;
+            }
+        </style>
+        </head>
+        <body>
+            <header>
+                <h1 id="heading">Welcome</h1>
+                <p>Yo fries</p>
+            </header>
+            <p>lets create a div</p>
+            <script>
+                let div = document.createElement('div');
+                div.id="paragraph";
+                div.className="alert";
+                div.innerHTML="<p>congrats you have created a div</p>";
+                document.body.append(div);
+
+                let heading=document.getElementById("heading");
+                heading.innerHtml='&#128512';
+
+                document.querySelecter('header p').innerHtml="<strong>Good Job!</strong>"
+
+            </script>
+        </body>
+</html>
