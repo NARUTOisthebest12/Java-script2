@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Website</title>
+        <style>
+            body{
+                text-align:center;
+            }
+            nav{
+                background-color:teal;
+                padding:10px;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+            }
+            li{
+                float:left;
+            }
+            li a{
+                display:block;
+            }
+            li a:hover{
+                background-color: rgb(219, 130, 130);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="6-about.html">About</a></li>
+                <li><a href="6-contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>Intresting information</h2>
+        <img src="download (3).jfif"/>
+        <br />
+        <button onclick="goku()">Read more</button>
+        <p id="goku-info"></p>
+        <img src="download.jfif"/>
+        <br />
+        <button onclick="gojo()">Read more</button>
+        <p id="gojo-info"></p>
+        <script>
+            function goku(){
+                document.getElementById("goku-info").innerHTML = "Goku is the strongest anime charectar and is loved my most people"
+            }
+            function gojo(){
+                document.getElementById("gojo-info").innerHTML = "Gojo is from an anime called jujutsu kaisen and is really popular amoung anime fans"
+            }
+        </script>
+    </body>
+</html>
+
+    
